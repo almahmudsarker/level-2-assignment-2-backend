@@ -3,7 +3,6 @@
 Begin by cloning the repository to your local machine using Git.
 
 ```bash
-Copy code
 git clone <repository-url>
 ```
 
@@ -11,7 +10,6 @@ git clone <repository-url>
 Navigate to the directory of the cloned repository.
 
 ```bash
-Copy code
 cd <repository-name>
 ```
 
@@ -19,7 +17,6 @@ cd <repository-name>
 Install the project's dependencies using npm.
 
 ```bash
-Copy code
 npm install
 ```
 
@@ -41,18 +38,15 @@ Ensure these variables are correctly referenced in your application, often in a 
 Launch the development server using the provided npm script:
 
 ```bash
-Copy code
 npm run start:dev
 ```
 
 In your package.json file, ensure you have a script defined as start:dev to run the server. Example:
 
 ```json
-Copy code
 "scripts": {
     "start:dev": "ts-node-dev --respawn --transpile-only ./src/server.ts",
     "start:prod": "node ./dist/server.js",
-    //...other scripts
   }
 ```
 
